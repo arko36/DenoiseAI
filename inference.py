@@ -169,8 +169,8 @@ def run_folder(
             subtype = 'PCM_16' if args.pcm_type == 'PCM_16' else 'PCM_24'
 
             # Evita clipping sin cambiar a WAV
-            if peak > 1.0:
-                estimates = estimates / peak
+            #if peak > 1.0:
+            #    estimates = estimates / peak
 
             sf.write(
                 output_file,
